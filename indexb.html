@@ -1,0 +1,152 @@
+<html>
+    <head>
+        <title>Home Page</title>
+        <style>
+            body {
+            color: aliceblue;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            font-family: Arial, sans-serif;
+            /* Background dengan properti CSS */
+            background-image: url('https://i.pinimg.com/736x/ad/d8/5e/add85e8e22d0c3aab5c3a1d70592c894.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            }
+
+            .content {
+                position: relative;
+                z-index: 1;
+                padding: 20px;
+                border-radius: 10px;
+                max-width: 90%;
+                margin: 20px auto;
+            }
+
+            .image-row {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 15px;
+                flex-wrap: wrap;
+                margin: 20px 0;
+            }
+
+            .image-row img {
+                width: 180px;
+                height: 180px;
+                object-fit: cover;
+                border: 2px solid white;
+                border-radius: 10px;
+                transition: transform 0.3s ease;
+            }
+
+            .image-row img:hover {
+                transform: scale(1.05);
+                box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+            }
+
+            h2 {
+                text-align: center;
+                font-size: 28px;
+                margin-bottom: 20px;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            }
+
+            .buttons {
+                display: flex;
+                justify-content: center;
+                gap: 15px;
+                margin-top: 30px;
+            }
+
+            button {
+                background: linear-gradient(to bottom, #4a90e2, #0579ee);
+                color: white;
+                border: none;
+                padding: 12px 25px;
+                border-radius: 25px;
+                cursor: pointer;
+                font-size: 16px;
+                font-weight: bold;
+                transition: all 0.3s ease;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            }
+
+            button:hover {
+                background: linear-gradient(to bottom, #357abd, #2a65a0);
+                transform: translateY(-3px);
+                box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+            }
+
+            button:active {
+                transform: translateY(1px);
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+            }
+
+            /* Media queries untuk responsivitas */
+            @media (max-width: 768px) {
+                .image-row img {
+                    width: 140px;
+                    height: 140px;
+                }
+
+                h2 {
+                    font-size: 24px;
+                }
+
+                button {
+                    padding: 10px 20px;
+                    font-size: 14px;
+                }
+            }
+
+            @media (max-width: 480px) {
+                .image-row {
+                    gap: 10px;
+                }
+
+                .image-row img {
+                    width: 120px;
+                    height: 120px;
+                }
+
+                .buttons {
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                button {
+                    width: 80%;
+                }
+            }
+            .container {
+                    display: flex;
+                    flex-direction: column;
+                    min-height: 100vh;
+            }
+            .content {
+                flex: 1;
+            }
+            .bottom-images {
+                display: flex;
+                justify-content: center;
+                margin-top: auto;
+                padding: 20px 0;
+               }
+        </style>
+    </head>
+    <body>
+        <div class="content" align="center">
+        <button class="nice-button" onclick="document.location='1a.html'">
+            Go to Full Stack Developer Page
+        </button>
+        <button class="nice-button" onclick="document.location='Untitled-.html'">
+            Explanation Page
+        </button>
+        </div>
+    </body>
+</html>
